@@ -62,7 +62,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/btn_SignUp"
+                android:id="@+id/btn_Login"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
@@ -97,7 +97,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_SignUp" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_Login" />
 
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/text_Password"
@@ -111,7 +111,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_Name"
+                app:layout_constraintTop_toBottomOf="@+id/text_Email"
                 app:met_baseColor="#0056d3"
                 app:met_errorColor="#ddaa00"
                 app:met_floatingLabel="highlight"
@@ -121,7 +121,7 @@
                 app:met_primaryColor="#982360" />
 
             <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/text_Name"
+                android:id="@+id/text_Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -153,6 +153,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:clickable="true"
         android:text="@string/create_account"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
