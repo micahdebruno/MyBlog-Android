@@ -13,4 +13,8 @@
     <string name="sign_uo">Sign Up</string>
     <string name="terms">Agree to Terms and Conditions</string>
     <string name="terms_and_cond">Terms and Conditions</string>
+    <string name="p_ID">Id: </string>
+    <string name="p_Name">Name: </string>
+    <string name="p_Email">Email: </string>
+    <string name="p_CreatedDate">Date Created: </string>
 </resources>

@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import auth.SignUp;
+import profile.UserProfile;
 import volley.VolleySingleton;
 
 import android.app.Activity;
@@ -104,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(String response) {
                     if(response.equals("true")){
-                        Intent intent = new Intent(getApplicationContext(), Dashboard.class);
+                        Intent intent = new Intent(getApplicationContext(), UserProfile.class);
+                        intent.putExtra("email", EMAIL);
                         startActivity(intent);
                     }else{
                         AlertDialog.Builder alert = new AlertDialog.Builder(mContext);
